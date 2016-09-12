@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TrainingCell" customModule="CodingForSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="113" height="147"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="113" height="147"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder292_292" translatesAutoresizingMaskIntoConstraints="NO" id="0vQ-vx-ysv">
+                        <rect key="frame" x="0.0" y="0.0" width="113" height="113"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0vQ-vx-ysv" secondAttribute="height" multiplier="1:1" id="L3W-sf-DQX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#我要上精选#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9r-gK-HJS">
+                        <rect key="frame" x="5" y="113" width="103" height="24"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="S9r-gK-HJS" firstAttribute="top" secondItem="0vQ-vx-ysv" secondAttribute="bottom" id="1ZO-Mf-jVU"/>
+                <constraint firstItem="0vQ-vx-ysv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6kp-Bs-8tN"/>
+                <constraint firstAttribute="trailing" secondItem="0vQ-vx-ysv" secondAttribute="trailing" id="ABi-vZ-2M2"/>
+                <constraint firstItem="S9r-gK-HJS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="CLL-9c-q1p"/>
+                <constraint firstItem="0vQ-vx-ysv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dSH-Zo-gqd"/>
+                <constraint firstAttribute="bottom" secondItem="S9r-gK-HJS" secondAttribute="bottom" priority="750" constant="10" id="elr-2V-9Bd"/>
+                <constraint firstAttribute="trailing" secondItem="S9r-gK-HJS" secondAttribute="trailing" constant="5" id="t5p-OY-T8c"/>
+            </constraints>
+            <size key="customSize" width="113" height="147"/>
+            <connections>
+                <outlet property="contentLabel" destination="S9r-gK-HJS" id="ScY-Ed-dSE"/>
+                <outlet property="imgView" destination="0vQ-vx-ysv" id="M82-2T-0eF"/>
+            </connections>
+            <point key="canvasLocation" x="449.5" y="483.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder292_292" width="292" height="292"/>
+    </resources>
+</document>

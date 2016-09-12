@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FansCell" customModule="CodingForSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder41_41" translatesAutoresizingMaskIntoConstraints="NO" id="hIM-4b-p00">
+                        <rect key="frame" x="14" y="14" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="Apn-WM-Dnx"/>
+                            <constraint firstAttribute="width" constant="36" id="MH2-KX-C0R"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.boderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.boderColor">
+                                <color key="value" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-54-fXm">
+                        <rect key="frame" x="242" y="23" width="64" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="atf-wK-60f"/>
+                            <constraint firstAttribute="width" constant="64" id="mN9-in-uZE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="+ 关注">
+                            <color key="titleColor" red="0.10980392156862745" green="0.80000000000000004" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="focus:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bU3-Mn-aml"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是一个人名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFt-3q-Pxh">
+                        <rect key="frame" x="65" y="24" width="162" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hIM-4b-p00" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="63x-G2-8Ku"/>
+                    <constraint firstItem="dFt-3q-Pxh" firstAttribute="leading" secondItem="hIM-4b-p00" secondAttribute="trailing" constant="15" id="GXP-hE-IFZ"/>
+                    <constraint firstAttribute="trailing" secondItem="d1X-54-fXm" secondAttribute="trailing" constant="14" id="M0Z-m6-Tsm"/>
+                    <constraint firstItem="d1X-54-fXm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Nxx-Ne-0Wj"/>
+                    <constraint firstItem="dFt-3q-Pxh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="XqK-Tm-bCf"/>
+                    <constraint firstItem="hIM-4b-p00" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dGq-zU-NSH"/>
+                    <constraint firstItem="d1X-54-fXm" firstAttribute="leading" secondItem="dFt-3q-Pxh" secondAttribute="trailing" constant="15" id="qTd-Rm-pPc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="focusButton" destination="d1X-54-fXm" id="xHs-1y-TEz"/>
+                <outlet property="headImageView" destination="hIM-4b-p00" id="28R-5E-Ecj"/>
+            </connections>
+            <point key="canvasLocation" x="249" y="290"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder41_41" width="41" height="41"/>
+    </resources>
+</document>

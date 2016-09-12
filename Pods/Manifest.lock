@@ -1,0 +1,56 @@
+PODS:
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
+    - AFNetworking/NSURLSession
+  - AsyncDisplayKit (1.9.7.2):
+    - AsyncDisplayKit/PINRemoteImage (= 1.9.7.2)
+  - AsyncDisplayKit/ASDealloc2MainObject (1.9.7.2)
+  - AsyncDisplayKit/PINRemoteImage (1.9.7.2):
+    - AsyncDisplayKit/ASDealloc2MainObject
+    - PINRemoteImage/iOS (>= 2.1.2)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (3.1.0)
+  - PINCache (2.2.2)
+  - PINRemoteImage/Core (2.1.2):
+    - PINCache (>= 2.1)
+  - PINRemoteImage/iOS (2.1.2):
+    - PINRemoteImage/Core
+  - SnapKit (0.20.0)
+  - SVProgressHUD (2.0.3)
+  - YYKit (1.0.5):
+    - YYKit/no-arc (= 1.0.5)
+  - YYKit/no-arc (1.0.5)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0.4)
+  - AsyncDisplayKit (~> 1.9.7.2)
+  - MBProgressHUD (~> 0.9.2)
+  - MJRefresh (~> 3.1.0)
+  - SnapKit (~> 0.20.0)
+  - SVProgressHUD (~> 2.0.3)
+  - YYKit (~> 1.0.5)
+
+SPEC CHECKSUMS:
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  AsyncDisplayKit: 1701c47761a3e274b82cc0c77e6294cfa69612f6
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  PINCache: 078426d356ab95ef875e9e62e5c35a2ea3333c28
+  PINRemoteImage: 2ce3f1fcc52f0360a3821f91f1a1bc653c5d2338
+  SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  YYKit: f2654fe525de2283648db957bddb37ddd8e06549
+
+COCOAPODS: 0.39.0
